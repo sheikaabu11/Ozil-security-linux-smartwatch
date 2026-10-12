@@ -454,22 +454,6 @@ Long-running network operations should not block Tkinter's main event loop.
 
 Use background threads where appropriate and update the interface safely from the main UI thread.
 
-### Problem: GitHub Push Returns 403
-
-A `403` error generally means GitHub is refusing write access with the credentials being used.
-
-Check that:
-
-- You are authenticated as the correct GitHub account.
-- The repository URL is correct.
-- Your token has access to the repository and `Contents: Read and write` permission, or your SSH key is configured correctly.
-- Your GitHub account has write access to the repository.
-
-You can also authenticate using GitHub CLI or SSH.
-
-Never share GitHub tokens, passwords, or private SSH keys.
-
----
 
 ## 🔒 Security Considerations
 
